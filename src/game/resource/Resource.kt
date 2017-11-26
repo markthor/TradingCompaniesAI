@@ -9,7 +9,7 @@ abstract class Resource(private val numberOfBuckets: Int) {
 	init {
 		buckets = Array(
 				size = numberOfBuckets,
-				init = { i -> Bucket(resourceCost = i + 1, numberOfResourcesInBucket = resourcesPerBucket) }
+				init = { i -> Bucket(resourceCost = i + 1, bucketSize = resourcesPerBucket, resourcesInBucket = resourcesPerBucket) }
 		)
 	}
 

@@ -7,10 +7,10 @@ class Bucket {
 	private var numberOfResourcesInBucket: Int
 
 	@Suppress("ConvertSecondaryConstructorToPrimary")
-	constructor(resourceCost: Int, numberOfResourcesInBucket: Int) {
+	constructor(resourceCost: Int, bucketSize: Int, resourcesInBucket: Int) {
 		this.resourceCost = resourceCost
-		this.maxNumberOfResourcesInBucket = numberOfResourcesInBucket
-		this.numberOfResourcesInBucket = numberOfResourcesInBucket
+		this.maxNumberOfResourcesInBucket = bucketSize
+		this.numberOfResourcesInBucket = resourcesInBucket
 	}
 
 	fun decrement() {
